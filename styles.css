@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #4a90e2;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-btn.active {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-container input[type="radio"] {
+    display: none;
+}
+
+.rating-container label {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.rating-container input[type="radio"]:checked + label {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-group label {
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"]:checked + label {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.search-container {
+    margin-bottom: 1rem;
+}
+
+#search-student {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4a90e2;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.review-rating {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
